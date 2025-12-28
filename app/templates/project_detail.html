@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ project.key }} — {{ project.name }}</h1>
+<p>Role: <b>{{ membership.role }}</b></p>
+
+<h2>Stories</h2>
+<ul class="list">
+    {% for s in stories %}
+        <li>#{{ s.id }} — {{ s.title }} ({{ s.status }})</li>
+    {% else %}
+        <li>No stories yet.</li>
+    {% endfor %}
+</ul>
+
+<h2>Sprints</h2>
+<ul class="list">
+    {% for sp in sprints %}
+        <li>#{{ sp.id }} — {{ sp.name }} ({{ sp.status }})</li>
+    {% else %}
+        <li>No sprints yet.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

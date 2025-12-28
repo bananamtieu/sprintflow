@@ -1,0 +1,9 @@
+body { font-family: system-ui, -apple-system, Arial; margin: 0; }
+.topbar { display:flex; justify-content:space-between; padding:12px 16px; border-bottom:1px solid #eee; }
+.container { padding: 16px; max-width: 900px; margin: 0 auto; }
+.list { padding-left: 18px; }
+.error { color: #b00020; }
+input { display:block; margin: 6px 0 12px; padding: 8px; width: 320px; max-width: 100%; }
+button { padding: 8px 12px; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }

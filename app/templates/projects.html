@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Your Projects</h1>
+
+<ul class="list">
+    {% for p in projects %}
+        <li>
+        <a href="/ui/projects/{{ p.id }}">{{ p.key }} — {{ p.name }}</a>
+        </li>
+    {% else %}
+        <li>No projects yet.</li>
+    {% endfor %}
+</ul>
+{% endblock %}
